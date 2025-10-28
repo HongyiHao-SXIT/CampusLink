@@ -1,4 +1,4 @@
-package com.sxit.campuslink
+package com.sxit.campus_link
 
 import org.junit.Test
 

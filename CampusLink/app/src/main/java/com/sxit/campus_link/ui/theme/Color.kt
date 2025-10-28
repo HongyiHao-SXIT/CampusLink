@@ -1,4 +1,4 @@
-package com.sxit.campuslink.ui.theme
+package com.sxit.campus_link.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Campus_Link"
+rootProject.name = "My Application"
 include(":app")
  

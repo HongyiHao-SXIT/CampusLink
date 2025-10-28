@@ -5,11 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.sxit.campuslink"
-    compileSdk = 36
+    namespace = "com.sxit.campus_link"
+    compileSdk {
+        version = release(36)
+    }
 
     defaultConfig {
-        applicationId = "com.sxit.campuslink"
+        applicationId = "com.sxit.campus_link"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -40,7 +42,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
