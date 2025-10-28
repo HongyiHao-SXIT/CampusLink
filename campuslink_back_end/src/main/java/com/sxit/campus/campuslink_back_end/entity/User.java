@@ -12,40 +12,42 @@ import lombok.NoArgsConstructor;
 @Table(name = "users")
 public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true, nullable = false)
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(unique = true, nullable = false)
+  private Long id;
 
-    @Column(unique = true, nullable = false)
-    private String account;
+  @Column(unique = true, nullable = false)
+  private String account;
 
-    @Column(nullable = false)
-    private String password;
+  @Column(nullable = false)
+  private String password;
 
-    public enum Gender {
-        MALE, FEMALE
-    }
+  public enum Gender {
+    MALE,
+    FEMALE
+  }
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Gender gender;
+  @Enumerated(EnumType.STRING)
+  @Column(nullable = false)
+  private Gender gender;
 
-    @Column(nullable = false)
-    private String department;
+  @Column(nullable = false)
+  private String department;
 
-    @Column(name = "class_name", nullable = false)
-    private String className;
+  @Column(name = "class_name", nullable = false)
+  private String className;
 
-    @Lob
-    @Column(name = "introduction")
-    private String introduction;
+  @Lob
+  @Column(name = "introduction")
+  private String introduction;
 
-    public enum Role {
-        GRADUATE, UNDERGRADUATE
-    }
+  public enum Role {
+    GRADUATE,
+    UNDERGRADUATE
+  }
 
-    @Enumerated(EnumType.STRING) // 枚举存储为字符串
-    @Column(nullable = false)
-    private Role role;
+  @Enumerated(EnumType.STRING) // 枚举存储为字符串
+  @Column(nullable = false)
+  private Role role;
 }
