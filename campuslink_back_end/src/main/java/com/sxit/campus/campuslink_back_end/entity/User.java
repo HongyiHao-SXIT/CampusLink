@@ -36,18 +36,11 @@ public class User {
   private String department;
 
   @Column(name = "class_name", nullable = false)
-  private String className;
+  private String major;
 
   @Lob
   @Column(name = "introduction")
   private String introduction;
 
-  public enum Role {
-    GRADUATE,
-    UNDERGRADUATE
-  }
-
-  @Enumerated(EnumType.STRING) // 枚举存储为字符串
-  @Column(nullable = false)
-  private Role role;
+  
 }
